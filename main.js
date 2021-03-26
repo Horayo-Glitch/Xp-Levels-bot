@@ -1,7 +1,7 @@
 const { Client, Collection } = require("discord.js");
 const { TOKEN, PREFIX } = require("./config.js");
 const colors = require("colors");
-const canvas = require("canvas");
+const canvacord = require("canvacord");
 const Levels = require("discord-xp");
 const fs = require("fs");
 const client = new Client();
