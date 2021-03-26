@@ -4,7 +4,7 @@ const canvacord = require("canvacord");
 
 module.exports.run = async (client, message, args) => {
   
-  const target = message.author;
+  const target = message.mentions.users.first() || message.author;
   
   const user = Levels.fetch(target.id, message.guild.id);*
   if (!user) return message.reply("You don't have any xp, try to send messages!");
